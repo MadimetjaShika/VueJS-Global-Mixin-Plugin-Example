@@ -4,6 +4,7 @@
       <pistol></pistol>
     </div>
     <div class="col s4">
+      <rifle></rifle>
     </div>
     <div class="col s4">
     </div>
@@ -12,11 +13,13 @@
 
 <script>
 import Pistol from '@/components/Pistol/Pistol';
+import Rifle from '@/components/Rifle/Rifle';
 
 export default {
   name: 'hello',
   components: {
     Pistol,
+    Rifle,
   },
   data() {
     return {
