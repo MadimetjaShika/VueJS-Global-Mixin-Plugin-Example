@@ -1,13 +1,20 @@
 <template>
-  <div class="row">
-    <div class="col s4">
-      <pistol></pistol>
+  <div>
+    <div class="row">
+      <div class="col s12">
+        <h4>{{ actionText }}</h4>
+      </div>
     </div>
-    <div class="col s4">
-      <rifle></rifle>
-    </div>
-    <div class="col s4">
-      <shotgun></shotgun>
+    <div class="row">
+      <div class="col s12 m4">
+        <pistol></pistol>
+      </div>
+      <div class="col s12 m4">
+        <rifle></rifle>
+      </div>
+      <div class="col s12 m4">
+        <shotgun></shotgun>
+      </div>
     </div>
   </div>
 </template>
@@ -26,7 +33,7 @@ export default {
   },
   data() {
     return {
-
+      actionText: 'Pull any one of the triggers to shoot...',
     };
   },
 };

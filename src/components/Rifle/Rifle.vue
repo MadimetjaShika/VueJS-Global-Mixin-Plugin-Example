@@ -1,8 +1,7 @@
 <template>
   <div>
-    <h1>Rifle</h1>
-    <p>Pull Trigger</p>
-    <p>Output</p>
+    <h3>Rifle</h3>
+    <button class="btn waves-effect waves-light blue" @click="pullTrigger()">Pull Trigger</button>
   </div>
 </template>
 
@@ -11,7 +10,14 @@ export default {
   name: 'rifle',
   data() {
     return {
+      triggerAction: 'Long Rifle Fired, Whopdie Doo!',
+      splashPath: '/static/images/rifle.jpeg',
     };
+  },
+  methods: {
+    pullTrigger() {
+      this.$myScriptHelper.doSomethingCool(this.triggerAction, 'blue', this.splashPath);
+    },
   },
 };
 </script>
