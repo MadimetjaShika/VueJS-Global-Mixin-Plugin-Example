@@ -2,12 +2,13 @@
   "name": "blog.mjshika.xyz.vuejs.mixins.plugins",
   "version": "1.0.0",
   "description": "Example code for vuejs mixin/plugin example on https://blog.mjshika.xyz/blog/post/registering-globally-available-helper-scripts-in-vuejs",
-  "author": "Madimetja Shika <mmjshika@gmail.com>",
+  "author": "Madi Shika <mmjshika@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
+    "deploy:example": "gh-pages -d dist",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit/specs"
