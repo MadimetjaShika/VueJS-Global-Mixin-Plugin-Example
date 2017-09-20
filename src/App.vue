@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <img class="splash-image" :src="splashImage">
+    <h3>VueJS Global Mixins and Plugins Example</h3>
+    <p>Tutorial at <a :href="tutorialLink" target="_blank">blog.mjshika.xyz</a></p>
+    <img :src="splashImage" :key="splashImage" class="splash-image">
     <router-view></router-view>
   </div>
 </template>
@@ -12,7 +14,9 @@ export default {
   name: 'app',
   data() {
     return {
+      defaultSplashImage: '/static/images/splash.jpeg',
       splashImage: '/static/images/splash.jpeg',
+      tutorialLink: 'https://blog.mjshika.xyz/blog/post/registering-globally-available-helper-scripts-in-vuejs',
     };
   },
   mounted() {
@@ -22,7 +26,11 @@ export default {
     });
 
     eventBus.bus.$on('updateSplash', (splashPath) => {
-      this.splashImage = splashPath || '/static/images/splash.jpeg';
+      this.splashImage = splashPath || this.defaultSplashImage;
+    });
+
+    eventBus.bus.$on('destroyEvidence', () => {
+      this.splashImage = this.defaultSplashImage;
     });
   },
 };
