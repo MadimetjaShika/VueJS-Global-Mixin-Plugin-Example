@@ -20,7 +20,7 @@ export default {
     return {
       destroyEvidenceAcitonText: 'Rifle Evidence Destroyed!',
       triggerActionText: 'Long Rifle Fired, Whopdie Doo!',
-      splashPath: '/static/images/rifle.jpeg',
+      splashPath: 'static/images/rifle.jpeg',
     };
   },
   methods: {

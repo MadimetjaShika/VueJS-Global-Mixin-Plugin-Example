@@ -20,7 +20,7 @@ export default {
     return {
       destroyEvidenceAcitonText: 'Shotgun Evidence Destroyed!',
       triggerActionText: '12 Gauge Shotshell Fired, BAM!',
-      splashPath: '/static/images/shotgun.jpeg',
+      splashPath: 'static/images/shotgun.jpeg',
     };
   },
   methods: {

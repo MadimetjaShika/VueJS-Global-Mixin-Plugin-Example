@@ -20,7 +20,7 @@ export default {
     return {
       destroyEvidenceAcitonText: 'Pistol Evidence Destroyed!',
       triggerActionText: 'Arabellum Fired, Yay!',
-      splashPath: '/static/images/pistol.jpeg',
+      splashPath: 'static/images/pistol.jpeg',
     };
   },
   methods: {

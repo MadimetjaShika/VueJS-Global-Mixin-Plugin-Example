@@ -3,19 +3,23 @@
     <h3>VueJS Global Mixins and Plugins Example</h3>
     <p>Tutorial at <a :href="tutorialLink" target="_blank">blog.mjshika.xyz</a></p>
     <img :src="splashImage" :key="splashImage" class="splash-image">
-    <router-view></router-view>
+    <home></home>
   </div>
 </template>
 
 <script>
 import eventBus from '@/helpers/event-bus';
+import Home from '@/components/Home';
 
 export default {
   name: 'app',
+  components: {
+    Home,
+  },
   data() {
     return {
-      defaultSplashImage: '/static/images/splash.jpeg',
-      splashImage: '/static/images/splash.jpeg',
+      defaultSplashImage: 'static/images/splash.jpeg',
+      splashImage: 'static/images/splash.jpeg',
       tutorialLink: 'https://blog.mjshika.xyz/blog/post/registering-globally-available-helper-scripts-in-vuejs',
     };
   },
