@@ -9,14 +9,16 @@ import App from './App';
 import router from './router';
 
 Vue.config.productionTip = false;
+
+// Register global plugin
 Vue.use(plugins);
 
+// Register global mixin
 const mixin = {
   methods: {
     doAnotherCoolThing: myScriptHelper.doAnotherCoolThing,
   },
 };
-
 Vue.mixin(mixin);
 
 /* eslint-disable no-new */
@@ -25,5 +27,4 @@ new Vue({
   router,
   template: '<App/>',
   components: { App },
-  // mixins: [mixin],
 });
