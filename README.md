@@ -1,6 +1,10 @@
-# blog.mjshika.xyz.vuejs.mixins.plugins
+# VueJS Global Mixin Plugin Example
+> An example/demo of registering global mixins and plugin in VueJS.
 
-> Example code for vuejs mixin/plugin example on https://blog.mjshika.xyz/blog/post/registering-globally-available-helper-scripts-in-vuejs
+Live Demo available at []()
+
+Tutorial available at [blog.mjshika.xyz](https://blog.mjshika.xyz/blog/post/registering-globally-available-helper-scripts-in-vuejs) 
+
 
 ## Build Setup
 
@@ -23,5 +27,3 @@ npm run unit
 # run all tests
 npm test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
